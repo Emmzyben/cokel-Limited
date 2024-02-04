@@ -172,8 +172,8 @@ header>div>ul>li>a{
 
   section{
     background-color: #000000ea;
-    padding: 20px;
-    color: #fff; padding-left: 30px;
+    color: #fff; 
+    padding-bottom: 30px;
   }
 
   .rounds{
@@ -282,7 +282,14 @@ header>div>ul>li>a{
 .flagz{
   display: none;
 }
+#box{
+  padding: 20px;
+  padding-left: 40px;
+}
   @media screen and (max-width:900px) {
+    #box{
+      padding: 20px;
+    }
   .flagz{
     display: block;
   }
@@ -332,9 +339,12 @@ header>div>ul>li>a{
         display: none;
       }
         
-        .list{
-            flex-direction: column;
-        }
+      .list{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        justify-content: start;
+      }
         .list>div{
             width:100%;
             text-align: left;
