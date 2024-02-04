@@ -25,7 +25,7 @@ header>div>ul li{
     margin-right: 45px;
     font-size: 18px;
     cursor: pointer;
-    border-bottom: 1px dotted #0075dd;
+    border-bottom: 1px solid #0075dd;
 }
 #title{
     font-size: 25px;
@@ -112,7 +112,7 @@ header>div>ul>li>a{
     position: relative;
 }
 #roundDiv2{
-    background-color: rgba(3, 3, 3, 0.842);
+    background-color: rgba(3, 3, 3, 0.918);
         border-top-right-radius: 100px;
         border-bottom-right-radius: 100px;
         padding: 20px;
@@ -221,9 +221,6 @@ header>div>ul>li>a{
   #flag-container {
     white-space: nowrap;
     overflow: hidden;
-    background-image: url(images/pic6.jpg);
-    background-position: center;
-    background-size: cover;
   }
   .flag-container-inner {
     display: inline-block;
@@ -233,13 +230,12 @@ header>div>ul>li>a{
   
   .flag {
     width: 200px;
-    height: 120px;
+    height: 200px;
     display: inline-block;
-    margin-right: 5%;
+    margin-right: 2%;
+    border-radius: 50%;
   }
-  #flagger{
-    background-color: #0a0a0aa2;
-  }
+  
 
   #footDivs{
    background-image: linear-gradient(to right, white, #0075dd);
@@ -283,10 +279,28 @@ header>div>ul>li>a{
     font-size: 25px;
     font-weight: 600;
 }
+.flagz{
+  display: none;
+}
   @media screen and (max-width:900px) {
-    #footDivs>div{
-        display: flex;
+  .flagz{
+    display: block;
+  }
+    #intro{
       flex-direction: column;
+    }
+    #intro>div{
+      width: auto;
+    }
+  
+#roundDiv2{
+   position: relative;
+    }
+    #footDivs{
+        flex-direction: column;
+    }
+    #footDivs>div{
+      width: auto;
     }
     #footDivs>div>div{
       width: auto;
@@ -314,14 +328,10 @@ header>div>ul>li>a{
   }
   
     @media screen and (max-width:900px){
-        .rounds>div{
-            height: 300px;
-            width: 33%;
-            background-color: white;
-            margin: 10px;
-            border-radius: 50%;
-         
-          }
+      .rounds{
+        display: none;
+      }
+        
         .list{
             flex-direction: column;
         }
@@ -338,6 +348,8 @@ header>div>ul>li>a{
         width: auto;
         margin: 10px;
         margin-bottom: 20px;
+        box-shadow: 3px 10px 10px #757677;
+        
           }
                     aside{
                       display: block;

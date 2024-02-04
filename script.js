@@ -41,7 +41,7 @@ setInterval(goToNext, 6000);
 // Initial image update
 updateImage();
 
-const countryFlags = [ 'images/uk.jpg', 'images/uae.png', 'images/australia.png', 'images/canada.png', 'images/germany.png','images/italy.png']; // Add the paths to your flag images
+const countryFlags = [ 'images/visa.jpg', 'images/student.jpg', 'images/serve.jpg', 'images/indiana12.png', 'images/pic23.jpg']; // Add the paths to your flag images
 
 const flagContainerInner = document.querySelector('.flag-container-inner');
 
@@ -61,7 +61,7 @@ duplicatedFlags.forEach(flagPath => {
 });
 
 let currentPosition = 0;
-const increment = 0.1; // Adjust the increment value for the desired speed
+const increment = 0.03; // Adjust the increment value for the desired speed
 
 function rollFlags() {
   currentPosition -= increment;

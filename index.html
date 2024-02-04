@@ -10,7 +10,7 @@
             overflow: hidden;
             position: relative;
             width: 100%;
-            height: 400px; /* Adjust the height as needed */
+            height: 400px; 
         }
 
         #rotating-image {
@@ -21,9 +21,14 @@
         }
 
         #rotating-image img {
-            width: 100%;
+            width:100%;
             height: 100%;
             object-fit: cover;
+        }
+        @media screen and (max-width:700px){
+          #rotating-image {
+            width: 600%; 
+          }
         }
         
     </style>
@@ -92,7 +97,6 @@ function openNav() {
       </div> 
      
 
-<div >
 <div id="intro">
     <div id="roundDiv"style="background-image: url(images/visa.jpg);background-position: center;background-repeat: no-repeat;
     background-size: cover;text-align: center;">
@@ -100,14 +104,15 @@ function openNav() {
         <p >Welcome to</p>
         <h2>Cokel Limited</h2>
     </div>
-</div>
+  </div>
+
     
     <div id="write">
      <p>we are focused on delivering the best and quality travel experience. We deliver excellent services, values and help you make the best and cheapest choice to your favourite destinations.
     </p>
     </div>
 </div>
-</div>
+
 
 <div style="text-align: center;">
 <h2 style="color: #0075dd;">Our Services</h2>
@@ -157,10 +162,19 @@ background-size: cover;">
         <p>Planning to apply for a Uk visa soon or in the near future?<br> Our team of experts can help you analyze your situation <br> to ensure you are putting in the best application possible</p>
     </div>
 
+    <div style="display: flex;flex-direction: column;">
 <div class="rounds">
 <div class="r1"><img src="images/indiana12.png" alt=""></div>
 <div class="r2"><img src="images/pic23.jpg" alt=""></div>
 <div class="r3"><img src="images/serve.jpg" alt=""></div>
+</div>
+
+<div class="flagz">
+  <div id="flag-container" >
+  <div id="flagger">
+    <div class="flag-container-inner"></div>
+  </div>
+</div>
 </div>
 
 <div class="list">
@@ -173,7 +187,7 @@ background-size: cover;">
 </ul>
 </div>
 <div >
-<h2 style="background-color: #0075dd;text-align: center;padding: 10px;margin:20px;">Service Include:</h2>
+<h2 style="background-color: #0075dd;text-align: center;padding: 10px;margin:20px;border-radius: 10px;">Service Include:</h2>
 <ul>
     <li>University Application Processing</li>
     <li>Career Counceling</li>
@@ -184,10 +198,7 @@ background-size: cover;">
 </div>
 </div>
 
-<div id="flag-container" style="display: none;">
-  <div id="flagger">
-    <div class="flag-container-inner"></div>
-  </div>
+
 </section>
 </div>
 
@@ -253,7 +264,7 @@ background-size: cover;">
   
   </div>
     <div id="bottom">
-  <p>Copyright © 2024 Cokel Limited. All rights reserved. Created by Emiblaq tech</p>
+  <p>Copyright © 2024 Cokel Limited. All rights reserved. <br> Created by Emiblaq tech</p>
     </div>
   </footer>
     <script src="script.js"></script>
