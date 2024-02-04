@@ -276,7 +276,7 @@ header>div>ul>li>a{
     padding: 10px;
   }
   #linkz{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
 }
 .flagz{
@@ -314,7 +314,11 @@ header>div>ul>li>a{
     }
   }
   @media screen and (max-width:700px) {
-    
+    #linkz{
+      font-size: 17px;
+      font-weight: 600;
+      text-decoration: underline;
+  }
   #innnerfoot{
     flex-direction: column;
   }
@@ -322,7 +326,7 @@ header>div>ul>li>a{
     width:auto;
     padding: 10px;
     padding-top: 20px;
-    font-size: 15.5px;
+    font-size: 15px;
   }
   }
   
