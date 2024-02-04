@@ -242,10 +242,7 @@ header>div>ul>li>a{
   }
 
   #footDivs{
-    background-image: url(images/Rectangle\ 12.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+   background-image: linear-gradient(to right, white, #0075dd);
     display: flex;
     flex-direction: row;
   }
@@ -263,20 +260,32 @@ header>div>ul>li>a{
   }
   #innnerfoot>div{
     padding: 50px;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 500;
   }
-  
+  #seperate{
+    display: flex;
+    flex-direction: row;
+   }
+  #seperate1{
+    padding-top: 15px;
+    padding-right: 10px;
+  }
   #bottom{
     text-align: center;
     font-size: 14px;
     line-height: 24px;
     color: #fff;
-    background-color: #11101E;
+    background-color: rgb(22, 20, 20);
     padding: 10px;
   }
+  #linkz{
+    font-size: 25px;
+    font-weight: 600;
+}
   @media screen and (max-width:900px) {
     #footDivs>div{
+        display: flex;
       flex-direction: column;
     }
     #footDivs>div>div{
@@ -284,6 +293,7 @@ header>div>ul>li>a{
     }
   }
   @media screen and (max-width:700px) {
+    
   #innnerfoot{
     flex-direction: column;
   }
