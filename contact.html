@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="cokel.css">
+</head>
+<body>
+    <header>
+        <div id="title" style="width: 40%;">
+          <img src="images/logo.png" alt="" >
+        </div>  
+  <div style="width: 60%;">
+  <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="book.html">Book</a></li>
+      <li><a href="contact.html">Contact</a></li>
+  </ul>
+  </div>
+      </header>
+      <aside> 
+          <img src="images/logo.png" alt="" width="120px">
+          <div onclick="openNav()" >
+              <div class="container" onclick="myFunction(this)" id="sideNav">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+                </div>
+              </div>
+      </aside>
+  
+  <nav>
+      <div id="mySidenav" class="sidenav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Our Services</a>
+          <a href="book.html">Book Now</a>
+          <a href="contact.html">Contact Us</a>
+      </div>
+      <script>
+      
+  function myFunction(x) {
+      x.classList.toggle("change");
+    }
+  
+    var open = false;
+  
+  function openNav() {
+      var sideNav = document.getElementById("mySidenav");
+      
+      if (sideNav.style.width === "0px" || sideNav.style.width === "") {
+          sideNav.style.width = "250px";
+          open = true;
+      } else {
+          sideNav.style.width = "0";
+          open = false;
+      }
+  }
+      </script>
+  </nav>
+<main></main>
+
+
+<footer></footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

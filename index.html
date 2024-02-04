@@ -1,0 +1,232 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cokel Limited</title>
+    <link rel="stylesheet" href="cokel.css">
+    <style>
+        #rotating-image-container {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            height: 400px; /* Adjust the height as needed */
+        }
+
+        #rotating-image {
+            width: 700%; 
+            height: 100%;
+            display: flex;
+            transition: transform 1.5s ease-in-out;
+        }
+
+        #rotating-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <header>
+      <div id="title" style="width: 40%;">
+        <img src="images/logo.png" alt="" >
+      </div>  
+<div style="width: 60%;">
+<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="book.html">Book</a></li>
+    <li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+    </header>
+    <aside> 
+        <img src="images/logo.png" alt="" width="120px">
+        <div onclick="openNav()" >
+            <div class="container" onclick="myFunction(this)" id="sideNav">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+            </div>
+    </aside>
+
+<nav>
+    <div id="mySidenav" class="sidenav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Our Services</a>
+        <a href="book.html">Book Now</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+    <script>
+    
+function myFunction(x) {
+    x.classList.toggle("change");
+  }
+
+  var open = false;
+
+function openNav() {
+    var sideNav = document.getElementById("mySidenav");
+    
+    if (sideNav.style.width === "0px" || sideNav.style.width === "") {
+        sideNav.style.width = "250px";
+        open = true;
+    } else {
+        sideNav.style.width = "0";
+        open = false;
+    }
+}
+    </script>
+</nav>
+<main>
+    <div id="rotating-image-container">
+        <div id="rotating-image"></div>
+
+      <button class="previous-button" id='button' onclick="goToPrevious()"><</button>
+      <button class="next-button" id='button' onclick="goToNext()">></button>
+      </div> 
+     
+
+<div >
+<div id="intro">
+    <div id="roundDiv"style="background-image: url(images/visa.jpg);background-position: center;background-repeat: no-repeat;
+    background-size: cover;text-align: center;">
+        <div id="roundDiv2" >
+        <p >Welcome to</p>
+        <h2>Cokel Limited</h2>
+    </div>
+</div>
+    
+    <div id="write">
+     <p>we are focused on delivering the best and quality travel experience. We deliver excellent services, values and help you make the best and cheapest choice to your favourite destinations.
+    </p>
+    </div>
+</div>
+</div>
+
+<div style="text-align: center;">
+<h2 style="color: #0075dd;">Our Services</h2>
+<div id="homeServices">
+    <a ><div class="image-container">
+      <img src="images/pic3.webp" alt="">
+      <div style="padding: 10px 20px 20px;"><h1>Flight Booking</h1> 
+    <p>Embark on a Journey: Elevate your travel experience with our seamless flight booking service. Discover convenience and reliability as you unlock the skies to your next adventure. </p>
+    </div>
+     
+    </div></a>
+    
+    <a >
+        <div class="image-container">
+      <img src="images/serve.jpg" alt="">
+      <div style="padding: 10px 20px 20px;"><h1>Hotel Accommodation</h1> 
+    <p>Global Comfort Awaits: Let us arrange your hotel accommodation in any country you travel to. Book with us for a seamless stay wherever your journey takes you.</p>
+    </div>
+     </div></a>
+    
+    <a ><div class="image-container">
+      <img src="images/indiana12.png" alt="">
+    <div style="padding: 10px 20px 20px;"> <h1>Uk Study Application Services</h1>
+    <p>Unlock Your Academic Journey: Explore our UK Study Application Services. Seamlessly navigate the path to education excellence. Apply now and open doors to a world-class learning experience.</p>
+    </div>
+    </div></a>
+    
+    <a ><div class="image-container">
+      <img src="images/visa.jpg" alt="">
+      <div style="padding: 10px 20px 20px;"> 
+      <h1>Student Visa Processing</h1>
+       <p>Simplify Your Journey: Navigate the complexities of student visa processing with ease. Let us handle the paperwork, so you can focus on your dreams. Apply now and embark on your educational adventure.</p>
+    </div>
+    
+    </div></a>  
+    </div>
+</div>
+
+<div style="background-image: url(images/student.jpg);background-position: center;background-repeat: no-repeat;
+background-size: cover;">
+<section>
+    <div id="uk">
+        <h1>UK VISA</h1>
+    <p style="font-style: italic;">Asistant Service</p>
+</div>
+    <div >
+        <p>Planning to apply for a Uk visa soon or in the near future?<br> Our team of experts can help you analyze your situation <br> to ensure you are putting in the best application possible</p>
+    </div>
+
+<div class="rounds">
+<div class="r1"><img src="images/indiana12.png" alt=""></div>
+<div class="r2"><img src="images/pic23.jpg" alt=""></div>
+<div class="r3"><img src="images/serve.jpg" alt=""></div>
+</div>
+
+<div class="list">
+<div>
+<ul>
+    <li>For Students</li>
+    <li>Nurses</li>
+    <li>Tourists</li>
+    <li>Business Travellers</li>
+</ul>
+</div>
+<div >
+<h2 style="background-color: #0075dd;text-align: center;padding: 10px;margin:20px;">Service Include:</h2>
+<ul>
+    <li>University Application Processing</li>
+    <li>Career Counceling</li>
+    <li>Visa interview Preparation</li>
+    <li>Visa Refusal Appeals</li>
+    <li>Flight Ticketing</li>
+</ul>
+</div>
+</div>
+
+<div id="flag-container">
+  <div id="flagger">
+    <div class="flag-container-inner"></div>
+  </div>
+</section>
+</div>
+
+
+
+</main>
+
+
+<footer>
+    <div id="footDivs" >
+    <div id="innnerfoot" class="inner">
+   <div >
+   <p id="linkz">Quick Links</p> 
+  <p><a href="index.html">Home</a></p>
+  <p><a href="about.html">About Us</a></p>
+  <p><a href="signup.html">Sign Up</a></p>
+   </div> 
+   <div >
+   <p id="linkz">Legal</p> 
+  <p><a href="#">Privacy Policy</a></p>
+  <p><a href="#">Support</a></p>
+  <p><a href="#">Terms and Conditions</a></p>
+   </div> 
+   </div>
+  
+   
+     <div id="subscribe">
+      
+        <h2>Stay Updated!</h2>
+      <p>Subscribe to our newsletter</p>
+  
+      <form action=""><br>
+        <input type="email" name="" id="" placeholder="Enter email"><br>
+        <button type="submit">Subscribe</button>
+      </form>
+  </div>
+  </div>
+    <div id="bottom">
+  <p>Copyright © 2024 Skillman. All rights reserved. Created by Praize & Emiblaq tech co</p>
+    </div>
+  </footer>
+    <script src="script.js"></script>
+</body>
+</html>
