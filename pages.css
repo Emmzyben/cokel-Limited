@@ -3,11 +3,11 @@
     padding: 30px;
     text-align: center;
     font-size: 40px;
-    color: #fff;
+    color: #f3ecec;
 }
 #write{
     background-color: rgb(15, 15, 15);
-    color: #fff;
+    color:#f3ecec;
     padding: 60px;
 }
 #write>h2{
@@ -19,7 +19,7 @@
     }
     #write{
         background-color: rgb(15, 15, 15);
-        color: #fff;
+        color: #f3ecec;
         padding: 30px;
     }
 }
