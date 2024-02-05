@@ -1,5 +1,5 @@
 #about{
-    background-color: rgba(0, 0, 0, 0.918);
+    background-color: rgba(0, 0, 0, 0.678);
     padding: 30px;
     text-align: center;
     font-size: 40px;
@@ -16,5 +16,10 @@
 @media screen and (max-width:700px){
     #about{
         font-size: medium;
+    }
+    #write{
+        background-color: rgb(15, 15, 15);
+        color: #fff;
+        padding: 30px;
     }
 }
