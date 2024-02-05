@@ -10,7 +10,7 @@ header,#small{
     top: 0;    z-index: 10000;
 }
 header>div{
-    background-color: rgba(0, 0, 0, 0.767);
+    background-color: rgba(3, 3, 3, 0.911);
     color: #f3ecec;
     display: flex;
     flex-direction: row;
@@ -85,7 +85,7 @@ header>div>div>ul>li>a{
         }
         aside{
             display: none;
-            position: sticky;top: 0; background-color: rgba(22, 20, 20, 0.877);
+            position: sticky;top: 0; background-color: rgba(3, 3, 3, 0.781);
             z-index: 10000;
             }
     aside>div>p{
@@ -435,8 +435,8 @@ header>div>div>ul>li>a{
     top: 50%;
     transform: translateY(-50%);
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(255, 255, 255, 0);
     border: none;
     border-radius: 5px;
     cursor: pointer;
