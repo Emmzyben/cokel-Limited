@@ -1,7 +1,7 @@
 body{
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f3ecec;
+    background-color: #fff;
 }
 header,#small{
   background-image: url(images/student.jpg);
@@ -145,13 +145,12 @@ header>div>div>ul>li>a{
     text-decoration: none;
   width: 25%;
   margin: 20px;
-  border: 1px solid #e1e1e1;
-  background-color: #fafafa;
   border-radius: 10px;
   text-align: center;
   transition: 0.5s;
   color: #353030;
-  box-shadow: 3px 10px 2px #c8cbcf;
+  box-shadow: 7px 19px 8px #c8cbcf;
+
   }
   #homeServices>a:hover{
     box-shadow: 7px 19px 8px #c8cbcf;
@@ -160,9 +159,9 @@ header>div>div>ul>li>a{
   #homeServices>a>div>img{
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-  width: 100%;
+  width: 200px;
   height: 200px;
-  display: none;
+
   }
 
   #uk{
@@ -175,7 +174,7 @@ header>div>div>ul>li>a{
   section{
     background-color: #000000d7;
     color: #f3ecec; 
-    padding-bottom: 30px;
+    padding-bottom: 70px;
   }
 
   .rounds{
@@ -240,9 +239,10 @@ header>div>div>ul>li>a{
   
 
   #footDivs{
-   background-image: linear-gradient(to right, white, #0075dd);
+   background-color: #000000a2;
     display: flex;
     flex-direction: row;
+    color: white;
   }
   #footDivs>div{
   width: 50%;
@@ -258,8 +258,8 @@ header>div>div>ul>li>a{
   }
   #innnerfoot>div{
     padding: 50px;
-    font-size: 17px;
-    font-weight: 500;
+    font-size: 15px;
+    
   }
   #seperate{
     display: flex;
@@ -300,6 +300,7 @@ header>div>div>ul>li>a{
   }
     #intro{
       flex-direction: column;
+      display: none;
     }
     #intro>div{
       width: auto;
@@ -333,12 +334,12 @@ header>div>div>ul>li>a{
     width:auto;
     padding: 10px;
     padding-top: 20px;
-    font-size: 15px;
+    font-size: 14px;
   }
   }
   
   .inner a{
-    color:#0884cc;
+    color:#00a2ff;
     text-decoration: none;
   }
   .inner a:hover{
@@ -369,7 +370,7 @@ header>div>div>ul>li>a{
         width: auto;
         margin: 10px;
         margin-bottom: 20px;
-        box-shadow: 3px 10px 10px #757677;
+        box-shadow: 0px 0px 0px #c8cbcf;
         
           }
                     aside{

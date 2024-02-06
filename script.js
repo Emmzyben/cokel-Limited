@@ -1,7 +1,6 @@
 const imageUrls = [
-    'images/indiana.png',
+  'images/indiana12.png',
     'images/indiana010.png',
-    'images/indiana12.png',
     'images/visa.jpg',
     'images/student.jpg',
     'images/pic23.jpg',
