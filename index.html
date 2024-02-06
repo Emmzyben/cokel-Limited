@@ -25,12 +25,25 @@
             height: 100%;
             object-fit: cover;
         }
+        #firstshow{
+          display: none;
+        }
+        .secondshow{
+          display: block;
+        }
         @media screen and (max-width:700px){
           #rotating-image {
             width: 600%; 
           }
         }
-        
+        @media screen and (max-width:900px){
+          .secondshow{
+            display: none;
+          }
+          #firstshow{
+          display:block;
+        }
+        }
     </style>
 </head>
 <body>
@@ -94,7 +107,8 @@ function openNav() {
     </script>
 </nav>
 <main>
-    <div id="rotating-image-container">
+  <img src="images/visa.jpg" alt="" width="100%" height="300px" id="firstshow">
+  <div id="rotating-image-container" class="secondshow">
         <div id="rotating-image"></div>
 
       <button class="previous-button" id='button' onclick="goToPrevious()"><</button>
@@ -160,7 +174,7 @@ function openNav() {
 
 <div style="background-image: url(images/pic23.jpg);background-position: center;background-repeat: no-repeat;
 background-size: cover;">
-<section>
+<section id="section">
    <div id="box"> 
     <div id="uk">
         <h1>UK VISA</h1>
@@ -176,6 +190,31 @@ background-size: cover;">
 <div class="r1"><img src="images/indiana12.png" alt=""></div>
 <div class="r2"><img src="images/pic23.jpg" alt=""></div>
 <div class="r3"><img src="images/serve.jpg" alt=""></div>
+<script>
+  window.addEventListener('scroll', function() {
+    var section = document.getElementById('section');
+    var r1 = document.querySelector('.rounds > .r1');
+    var r2 = document.querySelector('.rounds > .r2');
+    var r3 = document.querySelector('.rounds > .r3');
+
+    if (!section) return; // Check if the section element exists
+
+    var sectionOffset = section.offsetTop;
+    var sectionHeight = section.offsetHeight;
+    var scrollPosition = window.scrollY;
+
+    // Check if the scroll position is within the range of the section element
+    if (scrollPosition >= sectionOffset && scrollPosition <= (sectionOffset + sectionHeight)) {
+      r1.classList.add('scroll-reached');
+      r2.classList.add('scroll-reached');
+      r3.classList.add('scroll-reached');
+    } else {
+      r1.classList.remove('scroll-reached');
+      r2.classList.remove('scroll-reached');
+      r3.classList.remove('scroll-reached');
+    }
+  });
+</script>
 </div>
 
 <div class="flagz">
@@ -219,65 +258,73 @@ background-size: cover;">
 
 <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2347.5850798972183!2d-2.0206191238125566!3d53.956877228867846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bf3bdd77c5a9f%3A0x90d4b77e246f03ba!2s23%20Bennett%20St%2C%20Skipton%20BD23%202NJ%2C%20UK!5e0!3m2!1sen!2sng!4v1707238756193!5m2!1sen!2sng" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 <footer>
-    <div id="footDivs" >
-    <div id="innnerfoot" class="inner">
-   <div >
-   <p id="linkz">Quick Links</p> 
-  <p><a href="index.html">Home</a></p>
-  <p><a href="about.html">About Us</a></p>
-   <p><a href="application.html">Application</a></p>
-  <p><a href="book.html">Book</a></p>
-  <p><a href="contact.html">Contact Us</a></p>
-   </div> 
-   <div >
-   <p id="linkz">Partners</p> 
- <p>Stechin Global Consult</p>
- <p>Stechinglobalconsult@yahoo.com</p>
- <p>+234 812 934 8276</p>
-   </div> 
-   </div>
-  
-   
-   <div id="innnerfoot">
-    <div>
-      <p id="linkz">Office Address</p>
-      <div id="seperate">
-  <span id="seperate1"> <i class="fa fa-map-marker" style="font-size:20px;color:red"></i></span>
-  <span>
-    <p>  23 Bennett Street Skipton, 
-    BD23 2NJ</p>  
-     <p>United Kingdom</p> </span>     
+  <div id="footDivs" >
+  <div id="innnerfoot" class="inner">
+ <div>
+ <p id="linkz">Quick Links</p> 
+<p><a href="index.html">Home</a></p>
+<p><a href="about.html">About Us</a></p>
+ <p><a href="application.html">Application</a></p>
+<p><a href="book.html">Book</a></p>
+<p><a href="contact.html">Contact Us</a></p>
+ </div> 
+ <div>
+  <p id="linkz">Office Address</p>
+  <div id="seperate">
+<span id="seperate1"> <i class="fa fa-map-marker" style=" font-size:20px;color:rgb(247, 26, 26)"></i></span>
+<span>
+<p>  23 Bennett Street Skipton, 
+BD23 2NJ</p>  
+ <p>United Kingdom</p> </span>     
 </div>
-    </div>
-
-
-    <div>
-  <p id="linkz">Phone & Email</p>  
-  <div id="seperate">
-    <span id="seperate1"> <i class="fa fa-phone" style="font-size:20px;color:red"></i></span>
-    <span>
-      <p>+447405303088</p>
-<p>+234 806 334 4263</p>
-<p>+4474906889120</p>
+<p id="linkz">Social</p>
+<div id="seperate">
+<span id="seperate1"> <i class="fa fa-instagram" style=" font-size:20px;color:rgb(247, 26, 26)"></i></span>
+<span>
+<p> <a href="https://www.instagram.com/stechinglobal?igsh=dHVyZ2YxanJlbG5m" target="_blank" style="color: white;">Instagram</a></p>  
 </span>     
-  </div>  
+</div>
+</div>
 
-  <div id="seperate">
-    <span id="seperate1"> <i class="fa fa-envelope" style="font-size:20px;color:red"></i></span>
-    <span>
-      <p>
-      </p></span>     
-  </div>  
-
-
-    </div>
-  </div>
+ 
+</div>
+ 
+ <div id="innnerfoot">
+  <div>
+    <p id="linkz">Contact Us</p>  
+    <div id="seperate">
+      <span id="seperate1"> <i class="fa fa-phone" style=" font-size:20px;color:rgb(247, 26, 26)"></i></span>
+      <span>
+        <p>+447405303088</p>
+  <p>+234 806 334 4263</p>
+  <p>+4474906889120</p>
+  </span>     
+    </div>  
   
-  </div>
-    <div id="bottom">
-  <p>Copyright © 2024 Cokel Limited. All rights reserved. <br> Created by Emiblaq tech</p>
+    <div id="seperate">
+      <span id="seperate1"> <i class="fa fa-envelope" style=" font-size:20px;color:rgb(247, 26, 26)"></i></span>
+      <span>
+        <p>info@cokellimited.uk
+        </p></span>     
+    </div>  
+  
+  
+      </div>
+  <div >
+    <p id="linkz">Partners</p> 
+    <div style="display:flex;flex-direction: column;border-radius: 10px;width: 100px;text-align: center;background-color: #fff;color: #313131;font-size: smaller;">
+  <span><img src="images/partner.jpg" alt="" width="100%" style="border-top-right-radius: 10px;border-top-left-radius: 10px;"></span>
+   <span>Stechin Global Consult</span>
+ </div> 
     </div>
-  </footer>
+  
+</div>
+
+</div>
+  <div id="bottom">
+<p>Copyright © 2024 Cokel Limited. All rights reserved. <br> Created by Emitech  </p>
+  </div>
+</footer>
     <script src="script.js"></script>
 </body>
 </html>

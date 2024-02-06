@@ -13,6 +13,106 @@
 #write>h2{
     color:  #0884cc;
 }
+
+#apply{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#apply>form>input,textarea{
+margin: 10px;
+padding: 10px;
+width: 300px;
+background-color: rgba(0, 0, 0, 0);
+color: white;
+border: none;
+border-bottom: 1px solid #fff;
+}
+#apply>form>textarea{
+    border: 1px solid #fff;
+     max-width: 300px;
+   min-width: 300px;
+   max-height: 200px;
+
+}
+#apply>form>input::placeholder{
+    color: white;
+}
+#apply>form>#submit{
+    background-color: #0884cc;
+    border: none;
+    border-radius: 6px;
+}
+
+#slidingDiv {
+    position: relative;
+        left: -100%;
+      transition: left 1s ease-in-out;
+    }
+    
+    .hidden {
+      display: none;
+    }
+    
+    #contact{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 30px;
+        margin-bottom: 30px;
+    
+    }
+    #contact>div{
+        width: 32%;
+    }
+    #spanner{
+        display: flex;
+        flex-direction: row;
+        font-size: 16px; 
+    }
+    #spanner>span{
+        margin:20px ;
+    }
+    #spanner>span>img{
+        width: 70px;
+    }@media screen and (max-width:900px) {
+        #contact{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            margin: 30px;
+            margin-left: 10px;
+        }
+    #contact>div{
+        width: auto;
+    }
+        #spanner{
+            display: flex;
+            flex-direction: row; 
+            justify-content:start;
+            text-align: left;
+        }
+        #spanner>span{
+            margin:10px ;
+        }
+        #spanner>span>img{
+            width: 50px;
+        }
+    }    
+    @media screen and (max-width:700px) {
+        #spanner{
+            display: flex;
+            flex-direction: row;
+            font-size: 15px; 
+        }
+        #spanner>span{
+            margin:20 ;
+        }
+        #spanner>span>img{
+            width: 50px;
+        }}
+
 @media screen and (max-width:700px){
     #about{
         font-size: medium;
