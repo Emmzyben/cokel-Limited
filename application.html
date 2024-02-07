@@ -79,17 +79,40 @@
  </div>
  
     <div id="apply">
-    <form action="" id="form">
-   <input type="text" name="firstName"  placeholder="First name"><br>
-   <input type="text" name="lastName"  placeholder="Surname"><br>
-   <input type="number" name="phone"  placeholder="Phone number"><br>
-   <input type="email" name="email"  placeholder="Email"><br>
-  <textarea name="" id="input" cols="30" rows="10" placeholder="Enter message"></textarea><br>
-  <input type="submit" name="" id="submit">
+      <form action="apply.php" id="form" method="post">
+        <input type="text" name="firstName" id="firstName" placeholder="First name"><br>
+        <input type="text" name="lastName" id="lastName" placeholder="Surname"><br>
+        <input type="number" name="phone" id="phone" placeholder="Phone number"><br>
+        <input type="email" name="email" id="email" placeholder="Email"><br>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter message"></textarea><br>
+        <input type="submit" name="" id="submit">
     </form>
 </div>  
-    
-    <script>
+<script>
+   document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("form").addEventListener("submit", function(event) {
+                if (!validateForm()) {
+                    event.preventDefault(); // Prevent form submission
+                }
+            });
+
+            function validateForm() {
+                var firstName = document.getElementById("firstName").value;
+                var lastName = document.getElementById("lastName").value;
+                var phone = document.getElementById("phone").value;
+                var email = document.getElementById("email").value;
+                var message = document.getElementById("message").value;
+
+                // Check if any of the fields are empty
+                if (firstName === '' || lastName === '' || phone === '' || email === '' || message === '') {
+                    alert("Please fill in all fields.");
+                    return false; // Prevent form submission
+                }
+
+                return true; // Allow form submission
+            }
+        });
+
         window.onload = function() {
           setTimeout(function() {
             var applyDiv = document.getElementById('form');
