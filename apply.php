@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["email"];
     $message = $_POST["message"];
     
-    // Combine first name and last name into a full name
+  
     $fullName = $firstName . " " . $lastName;
     
     $headers = "From: $email" . "\r\n" .
@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Attempt to send the email
     if (mail($to, $subject, $mailBody, $headers)) {
         // Email sent successfully
-        // Optionally, you can redirect the user to a thank-you page
+      
         header("Location: success.html");
         exit;
     } else {
